@@ -1,0 +1,163 @@
+http://paulmason.name/item/simple-jquery-carousel-slider-tutorial
+
+<html>
+	<head>
+		<title>
+		feminicidios
+		</title>
+		
+		<script src="js/jquery-2.1.4.min.js" ></script>
+<script >
+	function() { 
+
+  
+ 	var $slider = $('.slider'); 
+ 	var $slide = 'li'; 
+ 	var $transition_time = 1000; 
+	var $time_between_slides = 4000; 
+
+ 	function slides(){
+	   return $slider.find($slide);
+	 }
+
+ 	slides().fadeOut();
+
+ 
+ 	slides().first().addClass('active');
+ 	slides().first().fadeIn($transition_time);
+
+  
+  	$interval = setInterval(
+   		function(){
+     	var $i = $slider.find($slide + '.active').index();
+
+     	slides().eq($i).removeClass('active');
+     	slides().eq($i).fadeOut($transition_time);
+
+     	if (slides().length == $i + 1) $i = -1;
+
+     	slides().eq($i + 1).fadeIn($transition_time);
+     	slides().eq($i + 1).addClass('active');
+   	}
+    	, $transition_time +  $time_between_slides 
+  	);
+
+	};
+</script>
+		<style type="text/css">
+					body {
+						background-color: #D5B39F;
+					}
+					#navi {
+					list-style:none;
+					float: right;
+					padding:0;
+					}
+					#navi a {
+					color:skyblue;
+					text-decoration: none;
+					padding: 0.5em;
+					}
+					#navi li {
+						margin:2px;
+						padding:2px;
+						border:1px solid #CCCCCC;
+						float:left;
+					}
+					#navi li:hover {
+						margin:2px;
+						padding:2px;
+						border:1px solid #000;
+						float:left;
+					}
+					#logo {
+						margin-left:34px;
+						padding:39px;
+						border:18px;
+						float:left;
+					}
+					.name {
+						margin-left:2em;
+						padding:24px;
+						border:10px;
+						float:left;
+						color:green
+					}
+					.slider	{
+ 					margin: 10px 0;
+  					width: 580px;
+ 					height: 250px; 
+ 					position: relative;
+ 					overflow: hidden;
+					}
+					.slider{
+					display:none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					}
+
+					.slider li {
+ 					display: none;
+ 					position: absolute; 
+  					top: 0; 
+  					left: 0; 
+					}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<ul id="navi">
+				<li><a href="#">informacion</a></li>
+				<li><a href="#">noticias</a></li>
+				<li><a href="#">casos</a></li>
+				<li><a href="#">consultas</a></li>
+				<li><a href="#">telefonos</a></li>
+			</ul>
+		</div>
+		<div id="logo">
+			<img src="logo.jpg">
+			<h1>kusi warmi</h1>
+		</div>
+
+		<ul class="slider">
+				<li>
+				  <img src="menos.jpg" />
+				</li>
+				<li>
+				  <img src="soso.jpg" />
+				</li>
+				<li>
+				  <img src="logi.jpg" />
+				</li>
+				
+		</ul>
+	
+		<div class="name">
+			
+				<ol>
+				
+					<li>
+						Se deben dictar ordenes de proteccion en todos los casos en
+						los que exista un riesgo de maltrato a las mujeres victimas de violencias.
+					</li>
+				
+					<li>
+						Dar capacitaciones en materia de perspectiva de
+						genero y derechos humanos de las mujeres que sean
+						eficientes, planeadas y con mecanismos de seguimiento y evaluacion.
+					</li>
+					<li>
+						Que las autoridades encargadas de procuracion de justicia conozcan
+						los protocolos de investigacion de delitos cometidos en contra de las mujeres.
+					</li>
+				</ol>
+		</div>
+	
+	</body>
+	<script type="text/javascript">
+	window.onload = function () {
+	alert("cargado...");
+	}</script>
+</html>
