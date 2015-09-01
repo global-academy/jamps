@@ -1,0 +1,38 @@
+
+body{
+	background:url("grey.jpg");
+}
+.conMargen{
+	margin: 30px;
+	padding: 30px;  
+	border: 3px solid #000;
+}
+.panel{
+	float: left;
+	width: 29%;
+	margin: 1em 2%;
+	border: 1px solid black;
+	height: 150px;
+	overflow: auto;
+
+}
+.img {
+	float: left;
+	height: 20vh;
+	vertical-align: middle;
+
+
+}
+.img img{
+	height: 10vh;
+	margin-top: 5vh;
+}
+
+.panel h3{
+	text-align: center;
+}
+
+h2{
+	float: left;
+	width: 100%;
+}
