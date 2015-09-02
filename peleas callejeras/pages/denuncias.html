@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="UTF-8">
 	<style>
 			.menu{
 					border: 2px solid black;
@@ -46,12 +47,25 @@
 				width: 30%;
 				height: 30%;
 			}
+			.contenedor {
+			    border: 5px solid black;
+			    width: 650px;
+			    text-align: half;
+			    position: absolute;
+			    right: 19%;
+			    background-color: orange;
+			    padding: 10px;
+
+			    }
+			label{
+				display: block;
+			}
 		</style>
 </head>
-<body background="onda.jpg">
-		<div class="menu">
-			<img class="left" src="logo.jpg">
-			<img class="right" src="logo.jpg">
+<body>
+	<div class="menu">
+			<img class="left" src="../img/logo.png">
+			<img class="right" src="../img/logo.png">
 			<div class="title">
 				<h1>JAMPS</h1>
 				<h3>Jovenes Armando un Mejor Pais Seguro</h3>
@@ -60,12 +74,24 @@
 			<ul>
 				<li><button><a href="#">Inicio</a></button></li>
 				<li><button><a href="#">Denuncias</a></button></li>
-				<li><button><a href="#"></a></button></li>
+				<li><button><a href="#">Informacion y Ayuda</a></button></li>
 			</ul>
-		</div>
-		<div align="center">
-			<h1>suceso ocurrido en palmasola</h1>
-		 <img class="tipo" src="logo.jpg">
-		  </div>
+	</div>
+	<div class="contenedor">
+		<form action="">
+		<section>
+		<label for="ubicacion">Lugar:</label>
+		<input type="text" name="ubicacion" id="ubicacion" class="ubicacion">
+		</section>
+		<section>
+		<label for="comentario">Descripción:</label>
+		<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+		</section>
+		<input type="submit" value="Enviar">
+		</form>
+
+
+	</div>
 </body>
 </html>
