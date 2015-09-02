@@ -4,54 +4,47 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<style>
-			.menu{
-					border: 2px solid black;
-					background-color: aqua;
-					width: 100%;
-				    text-align: center;
-
-			}
-			.menu:after {
-				content:"";
-				display:block;
-				clear:both;
-			}
-			li{
-				list-style: none;
+		.contenedor {
 				display: inline-block;
-
-			}
-			
-			.right{
-				float: right;
-			}	
-			.left{
-				float: left;
-			}
-			
-			h1{
-				font-size: 40px;
-			}
-			h3{
-			}
-			a{
-				text-decoration: none;
-			}
-			img.tipo{
-				width: 30%;
-				height: 30%;
-			}
-			.contenedor {
 			    border: 5px solid black;
-			    width: 650px;
-			    position: absolute;
-			    right: 19%;
+			    width: 80%;
 			    padding: 10px;
-
-			    }
+			}
 			label{
 				display: block;
 			}
+		.denuncia{
+			display: inline-block;
+			border: 2px solid black;
+			width: 80%;
+			padding: 15px;
+			background-color: #B0B0B0; 
+		}
+		.denuncia:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.autor{
+			float: left;
+			font-style:italic;
+			font-size:0.9em;
+		}
+		.lugar{
+			float: right;
+			font-style:bold;
+		}
+		.fechahora{
+			float: right;
+			font-style:italic;
+			font-size: 0.9em;
+			margin-bottom: 15px;
+			clear: right;
+		}
+		.descripcion{
+			clear: both;
+		}
+
 		</style>
 </head>
 <body>
@@ -69,6 +62,7 @@
 				<li><button><a href="ayuda.html">Informacion y Ayuda</a></button></li>
 			</ul>
 		</div>
+		<h1>DENUNCIAS</h1>
 	<div class="contenedor">
 		<form action="">
 		<section>
@@ -93,8 +87,12 @@
 		</section>
 		<input type="submit" value="Enviar">
 		</form>
-
-
+		<div class="denuncia">
+			<span class="autor">Richi</span>
+			<span class="lugar">Av.America esquina Av.Libertador Bolivar</span>
+			<span class="fechahora">12/09/15 21:23</span>
+			<p class="descripcion">Dos borrachos peleando en la esquina del banco mercantil santa cruz, al parecer uno tiene un arma punzocortante. Se precisa ayuda!</p>
+		</div>
 	</div>
 </body>
 </html>
