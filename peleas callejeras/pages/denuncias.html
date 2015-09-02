@@ -2,6 +2,7 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<style>
 			.menu{
 					border: 2px solid black;
@@ -21,10 +22,6 @@
 
 			}
 			
-			img{
-				width:130px;
-				height:130px;
-			}
 			.right{
 				float: right;
 			}	
@@ -37,9 +34,6 @@
 			}
 			h3{
 			}
-			ul{
-				float: left;
-			}
 			a{
 				text-decoration: none;
 			}
@@ -50,10 +44,8 @@
 			.contenedor {
 			    border: 5px solid black;
 			    width: 650px;
-			    text-align: half;
 			    position: absolute;
 			    right: 19%;
-			    background-color: orange;
 			    padding: 10px;
 
 			    }
@@ -72,13 +64,25 @@
 			</div>
 			
 			<ul>
-				<li><button><a href="#">Inicio</a></button></li>
-				<li><button><a href="#">Denuncias</a></button></li>
-				<li><button><a href="#">Informacion y Ayuda</a></button></li>
+				<li><button><a href="index.html">Inicio</a></button></li>
+				<li><button><a href="denuncias.html">Denuncias</a></button></li>
+				<li><button><a href="ayuda.html">Informacion y Ayuda</a></button></li>
 			</ul>
-	</div>
+		</div>
 	<div class="contenedor">
 		<form action="">
+		<section>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" class="nombre">
+		</section>
+		<section>
+			<label for="apellido">Apellido:</label>
+			<input type="text" name="apellido" id="apellido" class="apellido">
+		</section>
+		<section>
+			<label for="email">Email:</label>
+			<input type="text" name="email" id="email" class="email">
+		</section>
 		<section>
 		<label for="ubicacion">Lugar:</label>
 		<input type="text" name="ubicacion" id="ubicacion" class="ubicacion">
@@ -86,7 +90,6 @@
 		<section>
 		<label for="comentario">Descripción:</label>
 		<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-
 		</section>
 		<input type="submit" value="Enviar">
 		</form>

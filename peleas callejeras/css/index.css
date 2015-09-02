@@ -8,11 +8,9 @@ h1 {
 }
 
 .contenedor {
+	display: inline-block;
     border: 5px solid black;
-    width: 650px;
-    text-align: half;
-    position: absolute;
-    right: 19%;
+    width: 80%;
     padding: 10px;
 }
 

@@ -1,5 +1,6 @@
 body {
     background: url("../img/grey.jpg");
+    text-align: center;
 }
 
 .menu {
@@ -35,12 +36,6 @@ img {
 
 h1 {
     font-size: 40px;
-}
-
-h3 {}
-
-ul {
-    float: left;
 }
 
 a {
