@@ -70,14 +70,14 @@
 			</ul>
 		</div>
 	<div class="contenedor">
-		<form action="">
+		<form action="" onsubmit="return addComplaint(this);" id="formulario">
 		<section>
 			<label for="nombre">Nombre:</label>
-			<input type="text" name="nombre" id="nombre" class="nombre">
+			<input type="text" name="first_name" id="nombre" class="nombre">
 		</section>
 		<section>
 			<label for="apellido">Apellido:</label>
-			<input type="text" name="apellido" id="apellido" class="apellido">
+			<input type="text" name="last_name" id="apellido" class="apellido">
 		</section>
 		<section>
 			<label for="email">Email:</label>
@@ -85,11 +85,11 @@
 		</section>
 		<section>
 		<label for="ubicacion">Lugar:</label>
-		<input type="text" name="ubicacion" id="ubicacion" class="ubicacion">
+		<input type="text" name="location" id="ubicacion" class="ubicacion">
 		</section>
 		<section>
 		<label for="comentario">Descripción:</label>
-		<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+		<textarea name="content" id="comentario" cols="30" rows="10"></textarea>
 		</section>
 		<input type="submit" value="Enviar">
 		</form>
@@ -98,3 +98,8 @@
 	</div>
 </body>
 </html>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/denuncias.js"></script>
+<script>
+	loadComplaints();
+</script>
