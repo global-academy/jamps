@@ -60,5 +60,5 @@ function addPanel(complaint) {
 
 function formatDate(date) {
     var tmp = new Date(date);
-    return tmp.toLocaleTimeString();
+    return tmp.toLocaleDateString()+', '+tmp.toLocaleTimeString();
 }
