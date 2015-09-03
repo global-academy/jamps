@@ -18,31 +18,36 @@
 			border: 2px solid black;
 			width: 80%;
 			padding: 15px;
-			background-color: #B0B0B0; 
+			background-color: #B0B0B0;
+			margin-top: 10px;
 		}
 		.denuncia:after{
 			content: "";
 			display: block;
 			clear: both;
 		}
-		.autor{
+		.foto{
 			float: left;
-			font-style:italic;
-			font-size:0.9em;
+			height: 8em;
+			width: auto;
 		}
 		.lugar{
 			float: right;
+			clear: right;
 			font-style:bold;
 		}
 		.fechahora{
 			float: right;
 			font-style:italic;
 			font-size: 0.9em;
-			margin-bottom: 15px;
+			margin-top: 25px;
 			clear: right;
 		}
 		.descripcion{
-			clear: both;
+			float: right;
+			clear: right;
+			margin-top: 16px;
+			margin-bottom: 16px;
 		}
 
 		</style>
@@ -64,29 +69,6 @@
 		</div>
 		<h1>DENUNCIAS</h1>
 	<div class="contenedor">
-		<form action="" onsubmit="return addComplaint(this);" id="formulario">
-		<section>
-			<label for="nombre">Nombre:</label>
-			<input type="text" name="first_name" id="nombre" class="nombre">
-		</section>
-		<section>
-			<label for="apellido">Apellido:</label>
-			<input type="text" name="last_name" id="apellido" class="apellido">
-		</section>
-		<section>
-			<label for="email">Email:</label>
-			<input type="text" name="email" id="email" class="email">
-		</section>
-		<section>
-		<label for="ubicacion">Lugar:</label>
-		<input type="text" name="location" id="ubicacion" class="ubicacion">
-		</section>
-		<section>
-		<label for="comentario">Descripción:</label>
-		<textarea name="content" id="comentario" cols="30" rows="10"></textarea>
-		</section>
-		<input type="submit" value="Enviar">
-		</form>
 	</div>
 </body>
 </html>
